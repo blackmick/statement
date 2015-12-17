@@ -1,10 +1,17 @@
+<<<<<<< HEAD
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+>>>>>>> 3fbd3ce50b25e9347184a21a1f601d093a97d9a3
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.shawn.finance.statement</groupId>
     <artifactId>agent</artifactId>
     <version>1.0-SNAPSHOT</version>
+<<<<<<< HEAD
     <packaging>jar</packaging>
 
     <name>agent</name>
@@ -13,14 +20,23 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+=======
+>>>>>>> 3fbd3ce50b25e9347184a21a1f601d093a97d9a3
 
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
+<<<<<<< HEAD
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
+=======
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>
+
+>>>>>>> 3fbd3ce50b25e9347184a21a1f601d093a97d9a3
         <dependency>
             <groupId>org.apache.thrift</groupId>
             <artifactId>libthrift</artifactId>
@@ -29,6 +45,10 @@
     </dependencies>
 
     <build>
+<<<<<<< HEAD
+=======
+        <finalName>agent</finalName>
+>>>>>>> 3fbd3ce50b25e9347184a21a1f601d093a97d9a3
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -43,7 +63,11 @@
                         <configuration>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+<<<<<<< HEAD
                                 <mainClass>com.shawn.finance.statement.Agent</mainClass>
+=======
+                                    <mainClass>com.shawn.finance.statement.Agent</mainClass>
+>>>>>>> 3fbd3ce50b25e9347184a21a1f601d093a97d9a3
                                 </transformer>
                             </transformers>
                         </configuration>
@@ -57,6 +81,7 @@
                 <version>1.4.0</version>
                 <executions>
                     <execution>
+<<<<<<< HEAD
                         <goals>
                             <goal>java</goal>
                         </goals>
@@ -75,3 +100,18 @@
         </plugins>
     </build>
 </project>
+=======
+                        <phase>test</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>com.shawn.finance.statement.Agent</mainClass>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+>>>>>>> 3fbd3ce50b25e9347184a21a1f601d093a97d9a3
